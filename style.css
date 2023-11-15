@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.image-Container{
+    height: 100vh;
+    width: 100vw;
+}
+#background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.adventure-content{
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.removed{
+    display: none;
+}
+#startButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: rgb(132, 174, 242);
+    color: rgb(57, 76, 113);
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'Kenia', sans-serif;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: rgb(132, 174, 242);
+    color: rgb(57, 76, 113);
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: 'Kenia', sans-serif;
+}
