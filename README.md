@@ -24,6 +24,10 @@ To begin the adventure, open the index.html file in your browser. The adventure 
 - Inventory system to collect items or achievements during the adventure (coming soon).
 - Designed using HTML, CSS, and JavaScript.
 
+## Demo
+
+Check out the live demo [here](https://katekrmn.github.io/JS-World/)
+
 ## Credits
 
 - Created by [KateKrmn]
