@@ -9,9 +9,26 @@ function showChoice(choiceIndex) {
     const button2 = document.getElementById("btn2");
     const button3 = document.getElementById("btn3");
     const instruction = document.getElementById("instruction");
-    const background = document.getElementById("background");
-const choice = choices[activeChoiceIndex];
+    const backgroundVideo = document.getElementById("backgroundVideo");
+    const imageContainer = document.querySelector(".image-Container");
+    const louvre = document.getElementById("louvre");
+    const monmartr = document.getElementById("monmartr");
+    const eiffelTower = document.getElementById("eiffelTower");
+    const inventoryVisit =document.querySelector(".inventoryVisit");
 
+    const choice = choices[activeChoiceIndex];
+    
+    if (choiceIndex === 0) {
+        imageContainer.style.display = "block";
+        backgroundVideo.style.display = "block";
+        background.style.display = "none";
+        backgroundVideo.play();
+    } else {
+        imageContainer.style.display = "block";
+        backgroundVideo.style.display = "none";
+        background.style.display = "block";
+        background.setAttribute("src", choice.background);
+    }
     title.textContent = choice.title;
     button1.textContent = choice.button1.title;
     button2.textContent = choice.button2.title;
@@ -28,7 +45,7 @@ const choice = choices[activeChoiceIndex];
     button3.onclick = function () {
         goToNextChoice(choice.button3.nextChoice);
     }
-    if (choice.title === choices[0].title) {
+    if (choice.title === choices[0].title || choice.title === choices[8].title) {
         button2.classList.add("removed");
         button3.classList.add("removed");
     }
